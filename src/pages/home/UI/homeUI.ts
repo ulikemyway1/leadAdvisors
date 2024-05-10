@@ -1,4 +1,5 @@
 import CreateElement from "../../../shared/element-create";
+import subcribeForm from "../../../widgets/subcribe";
 import timer from "../../../widgets/timer";
 import "./home.scss";
 const logoIcon = require("./img/logo.svg");
@@ -73,6 +74,8 @@ class HomeScreen {
       timer,
       this.wrapperEventLink,
     );
+
+    this.footer.append(subcribeForm);
 
     this.content.append(
       this.leftSideImg,
