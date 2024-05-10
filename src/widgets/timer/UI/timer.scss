@@ -1,0 +1,62 @@
+.timer {
+  display: flex;
+  margin-top: 7px;
+  &__time,
+  &__divider {
+    display: flex;
+    position: relative;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+    color: #162c4e;
+    font-size: 72px;
+    font-weight: 500;
+    width: 95px;
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 95px;
+    }
+  }
+  &__divider {
+    width: 55px;
+  }
+
+  &__time::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("./timer-bg.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 55px;
+    width: 135px;
+    bottom: -50px;
+  }
+}
+
+.days:before,
+.hours:before,
+.minutes:before,
+.seconds:before {
+  content: "Days";
+  position: absolute;
+  bottom: -32px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.hours:before {
+  content: "Hours";
+}
+
+.minutes:before {
+  content: "Minutes";
+}
+
+.seconds:before {
+  content: "Seconds";
+}
