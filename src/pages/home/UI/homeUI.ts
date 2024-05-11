@@ -10,7 +10,7 @@ class HomeScreen {
   private content: HTMLElement = new CreateElement({
     tag: "section",
     cssClasses: ["home"],
-    id:'home'
+    id: "home",
   }).getHTMLElement();
   private logoLinkWrapper: HTMLAnchorElement =
     new CreateElement<HTMLAnchorElement>({

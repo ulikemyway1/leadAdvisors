@@ -7,9 +7,10 @@ app.addSection(homeScreenContent);
 app.addSection(eventsPage);
 app.run();
 
-window.addEventListener('DOMContentLoaded', () => {
-    setTimeout(() => {
-      app.content.forEach((element) => {
-        element.classList.remove('at-loading')
-      })
-    }, 100)})
+window.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    app.content.forEach((element) => {
+      element.classList.remove("at-loading");
+    });
+  }, 100);
+});

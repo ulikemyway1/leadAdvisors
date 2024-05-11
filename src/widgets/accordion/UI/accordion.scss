@@ -1,11 +1,9 @@
 .accordion {
   margin-top: 20px;
   display: flex;
-  border: 1px solid black;
   gap: 4px;
   min-height: 400px;
   min-width: 400px;
-  width: 1705px;
   overflow: hidden;
   &__item {
     display: flex;
@@ -27,7 +25,7 @@
 
   &__main {
     overflow: hidden;
-    width: 995px;
+    width: 700px;
     transition: all 0.6s ease-in;
   }
 

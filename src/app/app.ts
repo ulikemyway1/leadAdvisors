@@ -9,7 +9,8 @@ export default class App {
 
   public run(): void {
     this.content.forEach((element) => {
-      document.body.append(element)
-    element.classList.add('at-loading')});
+      document.body.append(element);
+      element.classList.add("at-loading");
+    });
   }
 }
