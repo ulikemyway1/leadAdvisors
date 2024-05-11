@@ -6,3 +6,10 @@ const app = new App();
 app.addSection(homeScreenContent);
 app.addSection(eventsPage);
 app.run();
+
+window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+      app.content.forEach((element) => {
+        element.classList.remove('at-loading')
+      })
+    }, 100)})

@@ -10,12 +10,13 @@ class HomeScreen {
   private content: HTMLElement = new CreateElement({
     tag: "section",
     cssClasses: ["home"],
+    id:'home'
   }).getHTMLElement();
   private logoLinkWrapper: HTMLAnchorElement =
     new CreateElement<HTMLAnchorElement>({
       tag: "a",
       cssClasses: ["home__logo-link"],
-      attributes: { href: "#" },
+      attributes: { href: "#home" },
     }).getHTMLElement();
   private logoIcon: HTMLImageElement = new CreateElement<HTMLImageElement>({
     tag: "img",
