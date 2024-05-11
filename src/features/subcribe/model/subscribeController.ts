@@ -39,6 +39,7 @@ class SubscibeController {
         document.body.append(popupController.view.background);
         this.view.input.value = "";
         e.target.disabled = true;
+        document.body.style.overflow = "hidden";
       }
     });
   }

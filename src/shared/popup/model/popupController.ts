@@ -9,6 +9,7 @@ export class PopupController {
       if (e.target instanceof HTMLButtonElement) {
         this.view.view.remove();
         this.view.background.remove();
+        document.body.style.overflow = "auto";
       }
     });
   }

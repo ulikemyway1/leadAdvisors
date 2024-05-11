@@ -60,7 +60,7 @@ class HomeScreen {
   private eventLink: HTMLAnchorElement = new CreateElement<HTMLAnchorElement>({
     tag: "a",
     cssClasses: ["home__event-link"],
-    attributes: { href: "#" },
+    attributes: { href: "https://egorovagency.com/", target: "__blank" },
     textContent: "Go to the event",
   }).getHTMLElement();
 
@@ -68,7 +68,7 @@ class HomeScreen {
     new CreateElement<HTMLAnchorElement>({
       tag: "a",
       cssClasses: ["home__footer-link"],
-      attributes: { href: "#" },
+      attributes: { href: "#events" },
       textContent: "Other Events",
     }).getHTMLElement();
 
