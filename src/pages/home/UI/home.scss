@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   align-items: center;
 
   &__main-content {
@@ -98,5 +98,107 @@
     &::after {
       transform: translateX(5px) scale(1.05) rotate(-35deg);
     }
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+  .home__title {
+    font-size: 36px;
+  }
+
+  .home__sub-title {
+    font-size: 16px;
+    width: 286px;
+  }
+
+  .timer__time,
+  .timer__divider {
+    font-size: 36px;
+  }
+  .home__left-side-img {
+    width: 256px;
+    transform: translateX(-10px) translateY(-20px);
+  }
+  .home {
+    overflow: hidden;
+  }
+  .home__right-side-img {
+    width: 350px;
+    transform: translateX(72px) translateY(-19px) rotate(-7deg);
+  }
+  .home__logo-link {
+    margin-top: 100px;
+  }
+  .home__logo-icon {
+    width: 100%;
+  }
+
+  .home__title {
+    margin-top: 160px;
+  }
+
+  .home__sub-title {
+    margin-top: 15px;
+  }
+
+  .timer {
+    margin-top: 18px;
+  }
+
+  .timer__time,
+  .timer__divider {
+    width: 50px;
+  }
+
+  .timer__time::after {
+    transform: scaleY(1.5);
+    width: 65px;
+    height: 40px;
+    bottom: -53px;
+    font-size: 10px;
+  }
+
+  .timer__time::before {
+    bottom: -29px;
+    font-size: 12px;
+  }
+
+  .days::before {
+    content: "DD";
+  }
+  .hours::before {
+    content: "HH";
+  }
+  .minutes::before {
+    content: "MM";
+  }
+  .seconds::before {
+    content: "SS";
+  }
+
+  .home__event-wrapper {
+    margin-top: 88px;
+    font-size: 16px;
+  }
+
+  .home__event-link {
+    font-size: 18px;
+    margin-bottom: 170px;
+  }
+
+  .home__footer {
+    height: 160px;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  .subscribe__input {
+    width: 360px;
+    height: 40px;
+    padding: 10px 80px 10px 20px;
+  }
+
+  .subscribe__submit {
+    width: 33px;
+    height: 33px;
   }
 }
