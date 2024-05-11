@@ -1,5 +1,5 @@
 import CreateElement from "../../../shared/element-create";
-import subcribeForm from "../../../widgets/subcribe";
+import subcribeForm from "../../../features/subcribe";
 import timer from "../../../widgets/timer";
 import "./home.scss";
 const logoIcon = require("./img/logo.svg");

@@ -1,4 +1,7 @@
-import subcribe from "../api/subscribe";
+import CreateElement from "../../../shared/element-create";
+import popup from "../../../shared/popup";
+import popupController from "../../../shared/popup/model/popupController";
+import subscribe from "../api/subscribe";
 import subscribeView, { SubscibeView } from "../ui/subscribeUI";
 
 class SubscibeController {
@@ -23,9 +26,20 @@ class SubscibeController {
       }
     });
 
-    this.view.submit.addEventListener("click", (e) => {
+    this.view.submit.addEventListener("click", async (e) => {
       e.preventDefault();
-      if (e.target instanceof HTMLButtonElement) subcribe(e.target.value);
+      if (e.target instanceof HTMLButtonElement) {
+        const subscribingSuccessful = await subscribe(e.target.value);
+        if (subscribingSuccessful) {
+          popupController.setStatus("ok");
+        } else {
+          popupController.setStatus("fail");
+        }
+        document.body.append(popup);
+        document.body.append(popupController.view.background);
+        this.view.input.value = "";
+        e.target.disabled = true;
+      }
     });
   }
 
