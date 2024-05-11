@@ -252,3 +252,125 @@
     height: 33px;
   }
 }
+
+@media (min-width: 300px) {
+  .home__title {
+    font-size: 36px;
+  }
+
+  .home__sub-title {
+    font-size: 16px;
+    width: 286px;
+  }
+
+  .timer__time,
+  .timer__divider {
+    font-size: 36px;
+  }
+  .home__left-side-img {
+    width: 180px;
+    transform: translateX(-10px) translateY(-20px);
+  }
+  .home {
+    overflow: hidden;
+  }
+  .home__right-side-img {
+    width: 265px;
+    transform: translateX(72px) translateY(-19px) rotate(-7deg);
+  }
+  .home__logo-link {
+    margin-top: 80px;
+  }
+  .home__logo-icon {
+    width: 128px;
+  }
+
+  .home__title {
+    margin-top: 60px;
+    text-align: center;
+    line-height: 38px;
+  }
+
+  .home__sub-title {
+    margin-top: 15px;
+    line-height: 25px;
+  }
+
+  .home__event-wrapper {
+    gap: 17px;
+  }
+
+  .timer {
+    margin-top: 18px;
+  }
+
+  .timer__time,
+  .timer__divider {
+    width: 40px;
+  }
+
+  .timer__time::after {
+    transform: scaleY(1.5);
+    width: 65px;
+    height: 40px;
+    bottom: -53px;
+    font-size: 10px;
+  }
+
+  .timer__time::before {
+    bottom: -29px;
+    font-size: 12px;
+  }
+
+  .days::before {
+    content: "DD";
+  }
+  .hours::before {
+    content: "HH";
+  }
+  .minutes::before {
+    content: "MM";
+  }
+  .seconds::before {
+    content: "SS";
+  }
+
+  .home__event-wrapper {
+    margin-top: 88px;
+    font-size: 16px;
+  }
+
+  .home__event-link {
+    font-size: 18px;
+    margin-bottom: 115px;
+  }
+
+  .home__footer {
+    flex-direction: column;
+    gap: 15px;
+    height: 160px;
+    margin-top: 5px;
+    font-size: 14px;
+
+    &-link {
+      font-size: 16px;
+      position: static;
+      gap: 3px;
+    }
+  }
+  .subscribe__input {
+    margin-top: -10px;
+    width: 280px;
+    height: 40px;
+    padding: 10px 40px 10px 20px;
+    font-size: 14px;
+    letter-spacing: -0.6px;
+  }
+
+  .subscribe__submit {
+    width: 33px;
+    height: 33px;
+    top: 36%;
+    right: 4px;
+  }
+}
