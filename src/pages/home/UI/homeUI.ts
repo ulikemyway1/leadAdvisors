@@ -64,6 +64,14 @@ class HomeScreen {
     textContent: "Go to the event",
   }).getHTMLElement();
 
+  private otherEventsLink: HTMLAnchorElement =
+    new CreateElement<HTMLAnchorElement>({
+      tag: "a",
+      cssClasses: ["home__footer-link"],
+      attributes: { href: "#" },
+      textContent: "Other Events",
+    }).getHTMLElement();
+
   constructor() {
     this.logoLinkWrapper.append(this.logoIcon);
     this.wrapperEventLink.append(this.eventLink);
@@ -75,7 +83,7 @@ class HomeScreen {
       this.wrapperEventLink,
     );
 
-    this.footer.append(subcribeForm);
+    this.footer.append(subcribeForm, this.otherEventsLink);
 
     this.content.append(
       this.leftSideImg,
