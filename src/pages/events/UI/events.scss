@@ -1,0 +1,13 @@
+.events {
+  padding: 110px;
+  text-align: center;
+  min-height: 100vh;
+
+  &__title {
+    margin: 0;
+    font-size: 72px;
+    color: #162c4e;
+    opacity: 0.4;
+    text-transform: uppercase;
+  }
+}

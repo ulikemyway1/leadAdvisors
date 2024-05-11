@@ -1,0 +1,48 @@
+.accordion {
+  margin-top: 20px;
+  display: flex;
+  border: 1px solid black;
+  gap: 4px;
+  min-height: 400px;
+  min-width: 400px;
+  width: 1705px;
+  overflow: hidden;
+  &__item {
+    display: flex;
+    cursor: pointer;
+    &.collapsed .accordion__main {
+      width: 0;
+    }
+  }
+
+  &__root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 85px;
+    background: #162c4e;
+    color: #ffffff;
+  }
+
+  &__main {
+    overflow: hidden;
+    width: 995px;
+    transition: all 0.6s ease-in;
+  }
+
+  &__descr {
+    transform: rotate(-90deg);
+    font-size: 32px;
+    white-space: nowrap;
+  }
+  &__number {
+    position: absolute;
+    bottom: 15px;
+    font-size: 40px;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+}
