@@ -258,7 +258,7 @@
   }
 }
 
-@media (min-width: 300px) {
+@media (min-width: 300px) and (max-width: 767px) {
   .home__title {
     font-size: 36px;
   }
